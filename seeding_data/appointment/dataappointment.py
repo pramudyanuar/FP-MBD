@@ -6,9 +6,9 @@ import pandas as pd
 fake = faker.Faker()
 
 # Assuming we already have patient_id, doctor_id, and reviews_id ranges from previously generated data
-num_patients = 10000  # Adjust based on the actual number of patients generated
-num_doctors = 10000  # Adjust based on the actual number of doctors generated
-num_reviews = 10000  # Adjust based on the actual number of reviews generated
+num_patients = 150000  # Adjust based on the actual number of patients generated
+num_doctors = 1000  # Adjust based on the actual number of doctors generated
+num_reviews = 200000  # Adjust based on the actual number of reviews generated
 
 # Function to generate a single appointment record
 def generate_appointment(status):
@@ -41,7 +41,7 @@ random.shuffle(appointments)
 df_appointments = pd.DataFrame(appointments)
 
 # Save the DataFrame to a CSV file
-csv_file_path_appointments = 'appointments_data.csv'
+csv_file_path_appointments = 'seeding_data/appointment/appointments_data.csv'
 df_appointments.to_csv(csv_file_path_appointments, index=False)
 
 # Convert DataFrame to SQL insert statements
@@ -53,7 +53,7 @@ for _, row in df_appointments.iterrows():
     )
 
 # Save the SQL insert statements to a file
-sql_file_path_appointments = 'appointments_data.sql'
+sql_file_path_appointments = 'seeding_data/appointment/appointments_data.sql'
 with open(sql_file_path_appointments, 'w') as f:
     f.write('\n'.join(sql_statements_appointments))
 
