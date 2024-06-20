@@ -34,6 +34,16 @@ CREATE TABLE Doctors_sched (
     PRIMARY KEY (doctor_id, schedule_id)
 );
 
+-- Table: Appointments
+CREATE TABLE Appointments (
+    appointment_id SERIAL PRIMARY KEY,
+    appointment_date DATE,
+    appointment_time TIME,
+    status VARCHAR(50),
+    patient_id INT REFERENCES Patient(patient_id),
+    doctor_id INT REFERENCES Doctors(doctor_id)
+);
+
 -- Table: Reviews
 CREATE TABLE Reviews (
     reviews_id SERIAL PRIMARY KEY,
@@ -43,16 +53,6 @@ CREATE TABLE Reviews (
     patient_id INT REFERENCES Patient(patient_id),
     doctor_id INT REFERENCES Doctors(doctor_id),
     appointment_id INT REFERENCES Appointments(appointment_id)
-);
-
--- Table: Appointments
-CREATE TABLE Appointments (
-    appointment_id SERIAL PRIMARY KEY,
-    appointment_date DATE,
-    appointment_time TIME,
-    status VARCHAR(50),
-    patient_id INT REFERENCES Patient(patient_id),
-    doctor_id INT REFERENCES Doctors(doctor_id)
 );
 
 -- Table: Payments
