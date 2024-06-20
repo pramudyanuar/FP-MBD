@@ -54,4 +54,4 @@ END;
 $$ LANGUAGE plpgsql;
 
 SELECT HandleLogin('angelicatownsend@example.net', '%Z6NyQTI');
-SELECT * FROM GetProtectedData('496bac46471703e54e6ec5d2bf7852ba');
+SELECT * FROM GetProtectedData('b63250d45c65d38225ab7590619cc7f2');
