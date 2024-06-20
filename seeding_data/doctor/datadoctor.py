@@ -44,7 +44,7 @@ def introduce_nulls(df, null_fraction=0.1, columns=None):
     return df
 
 # Introduce NULL values to 10% of the 'specialization' and 'gender' columns
-columns_with_nulls = ['fee','ratings','specialization', 'gender']
+columns_with_nulls = ['ratings','specialization']
 df_doctors_batch_with_nulls = introduce_nulls(df_doctors_batch, null_fraction=0.29, columns=columns_with_nulls)
 
 # Save the batch to a CSV file
