@@ -25,15 +25,18 @@ patients = [generate_patient() for _ in range(num_records)]
 # Create a DataFrame
 df_patients = pd.DataFrame(patients)
 
-# Introduce random NULL values in the DataFrame
-def introduce_nulls(df, null_fraction=0.1):
+# Introduce random NULL values in the DataFrame for 'gender' and 'address'
+def introduce_nulls(df, null_fraction=0.1, columns=None):
     df = df.copy()
-    for col in df.columns:
+    if columns is None:
+        columns = df.columns
+    for col in columns:
         df.loc[df.sample(frac=null_fraction).index, col] = None
     return df
 
-# Introduce NULL values to 10% of the DataFrame
-df_patients_with_nulls = introduce_nulls(df_patients, null_fraction=0.1)
+# Introduce NULL values to 10% of 'gender' and 'address' columns
+columns_with_nulls = ['gender', 'address']
+df_patients_with_nulls = introduce_nulls(df_patients, null_fraction=0.34, columns=columns_with_nulls)
 
 # Save the DataFrame to a CSV file
 csv_file_path = 'seeding_data/patient/patients_data_batch.csv'
