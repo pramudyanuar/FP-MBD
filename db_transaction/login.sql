@@ -37,7 +37,7 @@ $$ LANGUAGE plpgsql;
 
 -- GetProtectedData
 CREATE OR REPLACE FUNCTION GetProtectedData(sessionToken VARCHAR)
-RETURNS SETOF Appointments AS $$
+RETURNS SETOF Doctors AS $$
 DECLARE
     validSession INT;
 BEGIN
@@ -46,7 +46,7 @@ BEGIN
     WHERE session_token = sessionToken;
 
     IF validSession > 0 THEN
-        RETURN QUERY SELECT * FROM Appointments;
+        RETURN QUERY SELECT * FROM Doctors;
     ELSE
         RAISE EXCEPTION 'Access Denied';
     END IF;
