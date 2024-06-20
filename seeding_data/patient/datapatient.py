@@ -18,7 +18,7 @@ def generate_patient():
         'gender': gender
     }
 
-# Generate 150,000 patient records
+# Generate 150000 patient records
 num_records = 150000
 patients = [generate_patient() for _ in range(num_records)]
 
