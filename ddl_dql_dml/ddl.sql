@@ -40,6 +40,9 @@ CREATE TABLE Reviews (
     rating INT,
     review_content VARCHAR(255),
     review_date TIMESTAMP
+    patient_id INT REFERENCES Patient(patient_id),
+    doctor_id INT REFERENCES Doctors(doctor_id),
+    appointment_id INT REFERENCES Appointments(appointment_id)
 );
 
 -- Table: Appointments
@@ -50,7 +53,6 @@ CREATE TABLE Appointments (
     status VARCHAR(50),
     patient_id INT REFERENCES Patient(patient_id),
     doctor_id INT REFERENCES Doctors(doctor_id),
-    reviews_id INT REFERENCES Reviews(reviews_id)
 );
 
 -- Table: Payments
