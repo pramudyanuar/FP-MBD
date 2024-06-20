@@ -39,7 +39,7 @@ CREATE TABLE Reviews (
     reviews_id SERIAL PRIMARY KEY,
     rating INT,
     review_content VARCHAR(255),
-    review_date TIMESTAMP
+    review_date TIMESTAMP,
     patient_id INT REFERENCES Patient(patient_id),
     doctor_id INT REFERENCES Doctors(doctor_id),
     appointment_id INT REFERENCES Appointments(appointment_id)
@@ -52,7 +52,7 @@ CREATE TABLE Appointments (
     appointment_time TIME,
     status VARCHAR(50),
     patient_id INT REFERENCES Patient(patient_id),
-    doctor_id INT REFERENCES Doctors(doctor_id),
+    doctor_id INT REFERENCES Doctors(doctor_id)
 );
 
 -- Table: Payments

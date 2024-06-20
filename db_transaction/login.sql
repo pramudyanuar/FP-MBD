@@ -35,23 +35,4 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
--- GetProtectedData
-CREATE OR REPLACE FUNCTION GetProtectedData(sessionToken VARCHAR)
-RETURNS SETOF Doctors AS $$
-DECLARE
-    validSession INT;
-BEGIN
-    SELECT COUNT(*) INTO validSession
-    FROM UserSessions
-    WHERE session_token = sessionToken;
-
-    IF validSession > 0 THEN
-        RETURN QUERY SELECT * FROM Doctors;
-    ELSE
-        RAISE EXCEPTION 'Access Denied';
-    END IF;
-END;
-$$ LANGUAGE plpgsql;
-
 SELECT HandleLogin('angelicatownsend@example.net', '%Z6NyQTI');
-SELECT * FROM GetProtectedData('b63250d45c65d38225ab7590619cc7f2');
