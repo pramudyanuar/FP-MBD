@@ -71,5 +71,6 @@ CREATE TABLE Messages (
     sent_date TIMESTAMP,
     sender VARCHAR(20),
     patient_id INT REFERENCES Patient(patient_id),
-    doctor_id INT REFERENCES Doctors(doctor_id)
+    doctor_id INT REFERENCES Doctors(doctor_id),
+    appointment_id INT REFERENCES Appointments(appointment_id)
 );
