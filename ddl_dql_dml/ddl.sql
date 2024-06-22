@@ -24,7 +24,8 @@ CREATE TABLE Doctors (
 CREATE TABLE Schedule (
     schedule_id SERIAL PRIMARY KEY,
     day VARCHAR(10),
-    hour TIME
+    start_hour TIME,
+    end_hour TIME
 );
 
 -- Table: Doctors_sched
