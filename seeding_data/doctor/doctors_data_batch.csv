@@ -435,12 +435,12 @@ Joseph Tucker,,70000,,STR71607,Male
 Andrew Golden,,95000,4.0,STR14505,Male
 Thomas Duncan,Radiology,25000,5.0,STR84054,Male
 Craig Lopez,,65000,3.0,STR92983,Male
-Shane Fernandez,Psychiatry,95000,,STR27841,Female
+Shane FerNULLdez,Psychiatry,95000,,STR27841,Female
 Christopher Nguyen,Gastroenterology,50000,3.0,STR35615,Female
 Heather Taylor,,35000,2.0,STR56325,Male
 Michael Andrade,Endocrinology,35000,5.0,STR11172,Male
 Mr. Joshua Barrera,Dermatology,45000,1.0,STR12611,Female
-Nancy Walters,Surgery,55000,2.0,STR96287,Female
+NULLcy Walters,Surgery,55000,2.0,STR96287,Female
 Michael Lamb,Neurology,45000,,STR14382,Female
 Jessica Miller,Dermatology,35000,,STR84475,Female
 Briana Wolf,Gastroenterology,20000,2.0,STR80251,Female
@@ -529,7 +529,7 @@ Madeline Price,Urology,25000,4.0,STR55249,Female
 Todd Crawford,,60000,,STR09613,Female
 Justin Ramos,Cardiology,100000,3.0,STR25625,Female
 Rachel Bishop,Gastroenterology,70000,,STR03642,Female
-Marissa Fernandez,,70000,1.0,STR59609,Female
+Marissa FerNULLdez,,70000,1.0,STR59609,Female
 Susan Kaiser,Radiology,55000,4.0,STR68357,Male
 Stephen Nelson,Pediatrics,80000,,STR61296,Male
 Amanda Williams,Pediatrics,80000,,STR23902,Male
@@ -564,7 +564,7 @@ Kelly Cole,Psychiatry,50000,1.0,STR69745,Female
 Gregg Adams,,55000,3.0,STR45008,Female
 Jonathan Harris,Cardiology,20000,4.0,STR73938,Female
 Fred Dixon,Endocrinology,90000,1.0,STR97622,Female
-Nancy Day,Urology,70000,2.0,STR69041,Female
+NULLcy Day,Urology,70000,2.0,STR69041,Female
 Scott Gilbert,Psychiatry,35000,2.0,STR05548,Female
 Carlos Brown,Oncology,90000,5.0,STR42336,Female
 Timothy Farmer,,30000,3.0,STR91947,Female
@@ -577,7 +577,7 @@ Teresa West,Neurology,75000,2.0,STR89776,Male
 Larry Wilkins,Endocrinology,100000,,STR36982,Male
 Rebecca Woodard,Cardiology,100000,2.0,STR93277,Female
 Michael Miller,Endocrinology,75000,5.0,STR62140,Male
-Nancy Fischer,Gastroenterology,80000,,STR91991,Female
+NULLcy Fischer,Gastroenterology,80000,,STR91991,Female
 April Roberson,Gastroenterology,80000,2.0,STR34847,Male
 Tara Holmes,Pediatrics,35000,3.0,STR48456,Female
 April Moran,Oncology,50000,5.0,STR53587,Female
@@ -619,7 +619,7 @@ Andrew Stevens,Dermatology,55000,,STR70503,Male
 Amanda Montgomery,,65000,,STR62672,Female
 Christopher Williams,Endocrinology,25000,1.0,STR84864,Female
 Ronald Newman,Psychiatry,50000,2.0,STR08668,Male
-Connor Fernandez,Dermatology,25000,1.0,STR47119,Female
+Connor FerNULLdez,Dermatology,25000,1.0,STR47119,Female
 Michelle Miller,Endocrinology,100000,1.0,STR97667,Male
 Alicia Smith,,45000,,STR39581,Female
 Anthony Byrd,Surgery,55000,4.0,STR14158,Female
@@ -711,7 +711,7 @@ Dana Adkins,Gastroenterology,70000,1.0,STR20601,Female
 Christopher Robinson,Gastroenterology,45000,,STR70761,Male
 Alison Scott,Oncology,50000,,STR72926,Female
 William Dean,Pediatrics,90000,3.0,STR81846,Female
-Jeff Hernandez,,20000,3.0,STR45545,Male
+Jeff HerNULLdez,,20000,3.0,STR45545,Male
 Jose Wells,Neurology,65000,,STR35780,Male
 David Perez,Endocrinology,20000,3.0,STR79410,Female
 William Beasley,Gastroenterology,70000,3.0,STR08081,Male
@@ -898,10 +898,10 @@ Toni Thompson,,100000,,STR39735,Female
 Julie Johnson,Surgery,100000,5.0,STR71853,Male
 Ryan Martinez,Endocrinology,25000,,STR68875,Male
 Robert Olson,Gastroenterology,80000,2.0,STR90130,Female
-Stephanie Hernandez,,55000,4.0,STR04874,Female
+Stephanie HerNULLdez,,55000,4.0,STR04874,Female
 Charles Walter,Pediatrics,60000,1.0,STR57021,Female
 Carol Johnson,Dermatology,90000,,STR32364,Male
-Sabrina Hernandez,Cardiology,100000,3.0,STR26729,Female
+Sabrina HerNULLdez,Cardiology,100000,3.0,STR26729,Female
 Courtney Ramos,Pediatrics,85000,,STR35906,Male
 Karen Mendoza,Oncology,95000,5.0,STR50217,Male
 Nicholas Martin MD,Oncology,20000,5.0,STR82886,Female

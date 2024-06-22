@@ -434,12 +434,12 @@ INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VAL
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Andrew Golden', NULL, 95000, 4.0, 'STR14505', 'Male');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Thomas Duncan', 'Radiology', 25000, 5.0, 'STR84054', 'Male');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Craig Lopez', NULL, 65000, 3.0, 'STR92983', 'Male');
-INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Shane Fernandez', 'Psychiatry', 95000, NULL, 'STR27841', 'Female');
+INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Shane FerNULLdez', 'Psychiatry', 95000, NULL, 'STR27841', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Christopher Nguyen', 'Gastroenterology', 50000, 3.0, 'STR35615', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Heather Taylor', NULL, 35000, 2.0, 'STR56325', 'Male');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Michael Andrade', 'Endocrinology', 35000, 5.0, 'STR11172', 'Male');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Mr. Joshua Barrera', 'Dermatology', 45000, 1.0, 'STR12611', 'Female');
-INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Nancy Walters', 'Surgery', 55000, 2.0, 'STR96287', 'Female');
+INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('NULLcy Walters', 'Surgery', 55000, 2.0, 'STR96287', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Michael Lamb', 'Neurology', 45000, NULL, 'STR14382', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Jessica Miller', 'Dermatology', 35000, NULL, 'STR84475', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Briana Wolf', 'Gastroenterology', 20000, 2.0, 'STR80251', 'Female');
@@ -528,7 +528,7 @@ INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VAL
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Todd Crawford', NULL, 60000, NULL, 'STR09613', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Justin Ramos', 'Cardiology', 100000, 3.0, 'STR25625', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Rachel Bishop', 'Gastroenterology', 70000, NULL, 'STR03642', 'Female');
-INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Marissa Fernandez', NULL, 70000, 1.0, 'STR59609', 'Female');
+INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Marissa FerNULLdez', NULL, 70000, 1.0, 'STR59609', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Susan Kaiser', 'Radiology', 55000, 4.0, 'STR68357', 'Male');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Stephen Nelson', 'Pediatrics', 80000, NULL, 'STR61296', 'Male');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Amanda Williams', 'Pediatrics', 80000, NULL, 'STR23902', 'Male');
@@ -563,7 +563,7 @@ INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VAL
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Gregg Adams', NULL, 55000, 3.0, 'STR45008', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Jonathan Harris', 'Cardiology', 20000, 4.0, 'STR73938', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Fred Dixon', 'Endocrinology', 90000, 1.0, 'STR97622', 'Female');
-INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Nancy Day', 'Urology', 70000, 2.0, 'STR69041', 'Female');
+INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('NULLcy Day', 'Urology', 70000, 2.0, 'STR69041', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Scott Gilbert', 'Psychiatry', 35000, 2.0, 'STR05548', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Carlos Brown', 'Oncology', 90000, 5.0, 'STR42336', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Timothy Farmer', NULL, 30000, 3.0, 'STR91947', 'Female');
@@ -576,7 +576,7 @@ INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VAL
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Larry Wilkins', 'Endocrinology', 100000, NULL, 'STR36982', 'Male');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Rebecca Woodard', 'Cardiology', 100000, 2.0, 'STR93277', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Michael Miller', 'Endocrinology', 75000, 5.0, 'STR62140', 'Male');
-INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Nancy Fischer', 'Gastroenterology', 80000, NULL, 'STR91991', 'Female');
+INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('NULLcy Fischer', 'Gastroenterology', 80000, NULL, 'STR91991', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('April Roberson', 'Gastroenterology', 80000, 2.0, 'STR34847', 'Male');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Tara Holmes', 'Pediatrics', 35000, 3.0, 'STR48456', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('April Moran', 'Oncology', 50000, 5.0, 'STR53587', 'Female');
@@ -618,7 +618,7 @@ INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VAL
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Amanda Montgomery', NULL, 65000, NULL, 'STR62672', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Christopher Williams', 'Endocrinology', 25000, 1.0, 'STR84864', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Ronald Newman', 'Psychiatry', 50000, 2.0, 'STR08668', 'Male');
-INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Connor Fernandez', 'Dermatology', 25000, 1.0, 'STR47119', 'Female');
+INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Connor FerNULLdez', 'Dermatology', 25000, 1.0, 'STR47119', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Michelle Miller', 'Endocrinology', 100000, 1.0, 'STR97667', 'Male');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Alicia Smith', NULL, 45000, NULL, 'STR39581', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Anthony Byrd', 'Surgery', 55000, 4.0, 'STR14158', 'Female');
@@ -710,7 +710,7 @@ INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VAL
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Christopher Robinson', 'Gastroenterology', 45000, NULL, 'STR70761', 'Male');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Alison Scott', 'Oncology', 50000, NULL, 'STR72926', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('William Dean', 'Pediatrics', 90000, 3.0, 'STR81846', 'Female');
-INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Jeff Hernandez', NULL, 20000, 3.0, 'STR45545', 'Male');
+INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Jeff HerNULLdez', NULL, 20000, 3.0, 'STR45545', 'Male');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Jose Wells', 'Neurology', 65000, NULL, 'STR35780', 'Male');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('David Perez', 'Endocrinology', 20000, 3.0, 'STR79410', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('William Beasley', 'Gastroenterology', 70000, 3.0, 'STR08081', 'Male');
@@ -897,10 +897,10 @@ INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VAL
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Julie Johnson', 'Surgery', 100000, 5.0, 'STR71853', 'Male');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Ryan Martinez', 'Endocrinology', 25000, NULL, 'STR68875', 'Male');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Robert Olson', 'Gastroenterology', 80000, 2.0, 'STR90130', 'Female');
-INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Stephanie Hernandez', NULL, 55000, 4.0, 'STR04874', 'Female');
+INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Stephanie HerNULLdez', NULL, 55000, 4.0, 'STR04874', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Charles Walter', 'Pediatrics', 60000, 1.0, 'STR57021', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Carol Johnson', 'Dermatology', 90000, NULL, 'STR32364', 'Male');
-INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Sabrina Hernandez', 'Cardiology', 100000, 3.0, 'STR26729', 'Female');
+INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Sabrina HerNULLdez', 'Cardiology', 100000, 3.0, 'STR26729', 'Female');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Courtney Ramos', 'Pediatrics', 85000, NULL, 'STR35906', 'Male');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Karen Mendoza', 'Oncology', 95000, 5.0, 'STR50217', 'Male');
 INSERT INTO Doctors (name, specialization, fee, ratings, str_number, gender) VALUES ('Nicholas Martin MD', 'Oncology', 20000, 5.0, 'STR82886', 'Female');

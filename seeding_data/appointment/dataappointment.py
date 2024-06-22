@@ -18,7 +18,7 @@ def generate_appointment(status):
         'status': status,
         'patient_id': random.randint(1, num_patients),
         'doctor_id': random.randint(1, num_doctors),
-        'reviews_id': random.randint(1, num_reviews)
+        'reviews_id': None if status == 'Scheduled' else random.randint(1, num_reviews)
     }
 
 # Number of scheduled and completed appointments
@@ -49,7 +49,7 @@ sql_statements_appointments = []
 for _, row in df_appointments.iterrows():
     sql_statements_appointments.append(
         f"INSERT INTO Appointments (appointment_date, appointment_time, status, patient_id, doctor_id, reviews_id) "
-        f"VALUES ('{row['appointment_date']}', '{row['appointment_time']}', '{row['status']}', {row['patient_id']}, {row['doctor_id']}, {row['reviews_id']});"
+        f"VALUES ('{row['appointment_date']}', '{row['appointment_time']}', '{row['status']}', {row['patient_id']}, {row['doctor_id']}, {row['reviews_id'] if row['reviews_id'] is not None else 'NULL'});"
     )
 
 # Save the SQL insert statements to a file
