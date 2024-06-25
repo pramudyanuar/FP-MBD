@@ -5,10 +5,9 @@ import pandas as pd
 # Initialize the faker generator
 fake = faker.Faker()
 
-# Assuming we already have patient_id, doctor_id, and reviews_id ranges from previously generated data
+# Assuming we already have patient_id and doctor_id ranges from previously generated data
 num_patients = 150000  # Adjust based on the actual number of patients generated
 num_doctors = 1000  # Adjust based on the actual number of doctors generated
-num_reviews = 200000  # Adjust based on the actual number of reviews generated
 
 # Function to generate a single appointment record
 def generate_appointment(status):
@@ -17,8 +16,7 @@ def generate_appointment(status):
         'appointment_time': fake.time(),  # Random time
         'status': status,
         'patient_id': random.randint(1, num_patients),
-        'doctor_id': random.randint(1, num_doctors),
-        'reviews_id': None if status == 'Scheduled' else random.randint(1, num_reviews)
+        'doctor_id': random.randint(1, num_doctors)
     }
 
 # Number of scheduled and completed appointments
@@ -48,8 +46,8 @@ df_appointments.to_csv(csv_file_path_appointments, index=False)
 sql_statements_appointments = []
 for _, row in df_appointments.iterrows():
     sql_statements_appointments.append(
-        f"INSERT INTO Appointments (appointment_date, appointment_time, status, patient_id, doctor_id, reviews_id) "
-        f"VALUES ('{row['appointment_date']}', '{row['appointment_time']}', '{row['status']}', {row['patient_id']}, {row['doctor_id']}, {row['reviews_id'] if row['reviews_id'] is not None else 'NULL'});"
+        f"INSERT INTO Appointments (appointment_date, appointment_time, status, patient_id, doctor_id) "
+        f"VALUES ('{row['appointment_date']}', '{row['appointment_time']}', '{row['status']}', {row['patient_id']}, {row['doctor_id']});"
     )
 
 # Save the SQL insert statements to a file
@@ -59,3 +57,6 @@ with open(sql_file_path_appointments, 'w') as f:
 
 print(f"CSV file saved to {csv_file_path_appointments}")
 print(f"SQL file saved to {sql_file_path_appointments}")
+
+# Print the DataFrame
+df_appointments.head()
