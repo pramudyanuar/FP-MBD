@@ -50,7 +50,8 @@ CREATE TABLE Appointments (
     appointment_id SERIAL PRIMARY KEY,
     appointment_date DATE,
     appointment_time TIME,
-    status VARCHAR(50),
+    appointment_status VARCHAR(50),
+    payment_status VARCHAR(50),
     patient_id INT REFERENCES Patient(patient_id),
     doctor_id INT REFERENCES Doctors(doctor_id)
 );
