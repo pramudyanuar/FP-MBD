@@ -5,7 +5,7 @@ BEGIN
     IF EXISTS (
         SELECT 1
         FROM Appointments a
-        WHERE a.Doctors_doctor_id = NEW.Doctors_doctor_id
+        WHERE a.doctor_id = NEW.doctor_id
         AND a.appointment_date = NEW.appointment_date
         AND ((NEW.appointment_time BETWEEN a.appointment_time AND (a.appointment_time + INTERVAL '1 hour'))
              OR (a.appointment_time BETWEEN NEW.appointment_time AND (NEW.appointment_time + INTERVAL '1 hour')))
