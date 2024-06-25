@@ -1,20 +1,7 @@
--- Melihat Dokter Yang Sedang Aktif
-DROP FUNCTION IF EXISTS GetActiveDoctor(VARCHAR);
-CREATE OR REPLACE FUNCTION GetActiveDoctor(sessionToken VARCHAR)
-RETURNS SETOF ActiveDoctorsCurrentSchedule AS $$
-DECLARE
-    validSession INT;
-BEGIN
-    SELECT COUNT(*) INTO validSession
-    FROM UserSessions
-    WHERE session_token = sessionToken;
-
-    IF validSession > 0 THEN
-        RETURN QUERY SELECT * FROM ActiveDoctorsCurrentSchedule;
-    ELSE
-        RAISE EXCEPTION 'Access Denied';
-    END IF;
-END;
-$$ LANGUAGE plpgsql;
-
-SELECT * FROM GetActiveDoctor('b63250d45c65d38225ab7590619cc7f2');
+CREATE VIEW ActiveDoctorsCurrentSchedule AS
+SELECT d.doctor_id, d.name, d.specialization, d.Fee, d.ratings, d.str_number, d.gender
+FROM Doctors d
+JOIN Doctors_sched ds ON d.doctor_id = ds.Doct
+JOIN schedule s ON ds.sche = s.schedule_id
+WHERE CURRENT_TIME BETWEEN s.start_hour AND s.end_hour
+AND s.day = to_char(current_date, 'FMDay');
