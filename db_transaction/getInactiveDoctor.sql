@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION GetActiveDoctors(sessionToken VARCHAR)
+CREATE OR REPLACE FUNCTION GetInactiveDoctors(sessionToken VARCHAR)
 RETURNS TABLE (
     doctor_id INT,
     doctor_name VARCHAR,
@@ -23,7 +23,7 @@ BEGIN
         RETURN QUERY
         SELECT adv.doctor_id, adv.doctor_name, adv.specialization, adv.fee, adv.ratings, adv.gender, adv.status
         FROM Active_Doctors_View adv
-        WHERE adv.status = 'Active';
+        WHERE adv.status = 'Inactive';
     ELSE
         -- User is not authenticated
         RAISE EXCEPTION 'Access Denied';
@@ -31,4 +31,4 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
-SELECT * FROM GetActiveDoctors('ed15fa7a62e9a586987cdf7599615b53');
+SELECT * FROM GetInactiveDoctors('ed15fa7a62e9a586987cdf7599615b53');

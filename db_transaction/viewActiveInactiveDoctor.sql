@@ -20,7 +20,3 @@ JOIN
     Doctors_sched ds ON d.doctor_id = ds.doctor_id
 JOIN 
     Schedule s ON ds.schedule_id = s.schedule_id;
-	
-SELECT * FROM Active_Doctors_View WHERE status = 'Active';
-SELECT * FROM Active_Doctors_View WHERE status = 'Inactive';
-SELECT * FROM Active_Doctors_View;
