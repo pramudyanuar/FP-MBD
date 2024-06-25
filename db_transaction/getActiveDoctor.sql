@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION GetActiveDoctors(sessionToken VARCHAR)
+CREATE OR REPLACE FUNCTION SearchActiveDoctors(sessionToken VARCHAR, specialization_filter VARCHAR DEFAULT NULL)
 RETURNS TABLE (
     doctor_id INT,
     doctor_name VARCHAR,
@@ -19,11 +19,12 @@ BEGIN
     GROUP BY patient_id;
 
     IF validSession > 0 THEN
-        -- User is authenticated, return active doctors
+        -- User is authenticated, search active doctors
         RETURN QUERY
         SELECT adv.doctor_id, adv.doctor_name, adv.specialization, adv.fee, adv.ratings, adv.gender, adv.status
         FROM Active_Doctors_View adv
-        WHERE adv.status = 'Active';
+        WHERE adv.status = 'Active'
+        AND (specialization_filter IS NULL OR adv.specialization = specialization_filter);
     ELSE
         -- User is not authenticated
         RAISE EXCEPTION 'Access Denied';
@@ -31,4 +32,4 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
-SELECT * FROM GetActiveDoctors('ed15fa7a62e9a586987cdf7599615b53');
+SELECT * FROM SearchActiveDoctors('ed15fa7a62e9a586987cdf7599615b53', 'Dermatology');
